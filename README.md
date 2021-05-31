@@ -21,4 +21,21 @@ For example git add *.html
  - Either of these commands should work just fine. 
 
 # Ignoring files
-- if you want Git to ignore a file in your directory, create a .gitignore file and then add the name of the file you want ignored to it. When you do a git status command afterwards, you shouldn't see that file name being tracked any longer. 
+- if you want Git to ignore a file in your directory, create a .gitignore file and then add the name of the file you want ignored to it. When you do a git status command afterwards, you shouldn't see that file name being tracked any longer.
+
+# Git Branches
+
+- Listing all branches
+    - git branch
+    - the asterisk and green text indicate the current branch you're working from/on.
+
+- Adding a branch
+    - git checkout -b <branch_name> - this command will automatically switch you to the branch once you hit ENTER
+
+- Changing branches
+    - Before you change branches, do a git branch command to list your branches. It's good practice so you're sure of where you are and the name of the branch you wan to switch to. 
+    - git checkout <branch_name> - this will switch you from the current branch to the branch name you specified in the command.
+
+- Merging a branch
+
+- Removing a branch
