@@ -41,4 +41,15 @@ For example git add *.html
 
 - Removing a branch
     - git branch -d <branch_name>. While it's not recommended to delete branches, this command will do the job!
-    Run a git branch command thereafter to verify that it's gone. 
+    Run a git branch command thereafter to verify that it's gone.
+
+# Upload your code to GitHub using Git
+- Setup
+    - Assuming you've already created a GitHub account, created a repository for the code you're attempting to upload, the first thing to do is set the remote origin.
+    - Grab the URL of your repository on Github because you'll need it for this next step.
+    - So from your current directory (where your code exists), type git remote add orgin <url> and press ENTER
+    - To confirm that the command was executed, you can check with git remote -v. It should show you the origin and it should be set to the  URL from your GitHub repository.
+- Upload
+    - Now to upload, use git push -u origin master
+    - This means your local branch master is now on a remote branch master as well. The remote is called origin.
+    - Go over to your GitHub account and you should see all your files there.
