@@ -16,5 +16,9 @@ For example git add *.html
 - It's a good command for adding everything in your project at once.
 
 # Removing Files
+- git restore --staged <file>
+- git reset HEAD <file>
+ - Either of these commands should work just fine. 
 
 # Ignoring files
+- if you want Git to ignore a file in your directory, create a .gitignore file and then add the name of the file you want ignored to it. When you do a git status command afterwards, you shouldn't see that file name being tracked any longer. 
