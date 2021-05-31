@@ -37,5 +37,8 @@ For example git add *.html
     - git checkout <branch_name> - this will switch you from the current branch to the branch name you specified in the command.
 
 - Merging a branch
+    - git merge <branch_name> - this will merge the specified branch into your current branch. So if you're currently in a feature branch, you'd issue a 'git merge master' command to merge your master branch with this one. But you could also do it the other way around which is switching back to your master branch with the git checkout <branch_name> command first, then issue a git merge <branch_name>. Either way works.
 
 - Removing a branch
+    - git branch -d <branch_name>. While it's not recommended to delete branches, this command will do the job!
+    Run a git branch command thereafter to verify that it's gone. 
